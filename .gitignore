@@ -1,0 +1,12 @@
+# Extracted package contents (generated from .fuuz)
+extracted/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temp files
+*.tmp
+*.bak
+~$*
