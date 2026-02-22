@@ -1,5 +1,7 @@
 # Extracted package contents (generated from .fuuz)
 extracted/
+extracted-wms/
+extracted-broker/
 
 # OS files
 .DS_Store
