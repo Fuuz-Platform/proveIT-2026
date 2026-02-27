@@ -193,7 +193,7 @@ Enterprise B ──MQTT──┐                    ┌──► SCADA System
                      │                    │    (process values)
 Enterprise C ──MQTT──┤                    │
                      │   ┌────────────┐   ├──► WMS
-Fanuc CRX-10 ─OPCUA─┤───│  ProveIT   │───┤    (outfeed → inventory)
+Fanuc CRX-10 ─OPCUA─ ┤───│  ProveIT   │───┤    (outfeed → inventory)
                      │   │   Data     │   │
 Prosys OPC UA ─OPCUA─┤   │  Broker    │   ├──► Robot Controller
                      │   └────────────┘   │    (work orders)
@@ -208,30 +208,30 @@ Robot MQTT   ──MQTT──┘                    │
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                        FUUZ Enterprise                           │
+│                        FUUZ Enterprise                          │
 │                                                                 │
-│  ┌─────────────────┐   ┌──────────────┐   ┌─────────────────┐  │
-│  │  Enterprise C    │   │  Data Broker  │   │  Enterprise B   │  │
-│  │  Full App        │   │               │   │  WMS            │  │
-│  │                  │   │  MQTT · OPCUA │   │                 │  │
-│  │  · IIoT Telemetry│◄─►│  · REST · WSS │◄─►│  · Receiving    │  │
-│  │  · OEE Engine    │   │               │   │  · Inventory    │  │
-│  │  · ML Analytics  │   │  Normalizes & │   │  · Cycle Count  │  │
-│  │  · Alarm Mgmt    │   │  routes data  │   │  · Order Fulfill│  │
-│  │  · HMI Panels    │   │  between all  │   │  · AGV Putaway  │  │
-│  │  · Batch Release │   │  systems      │   │  · Shipping     │  │
-│  │                  │   │               │   │                 │  │
-│  │  28 models       │   │  34 models    │   │  38 models      │  │
-│  │  26 screens      │   │  14 screens   │   │  33 screens     │  │
-│  │  39 flows        │   │  22 flows     │   │  33 flows       │  │
-│  └─────────────────┘   └──────┬───────┘   └─────────────────┘  │
+│  ┌─────────────────┐    ┌──────────────┐    ┌─────────────────┐ │
+│  │  Enterprise C    │   │  Data Broker  │   │  Enterprise B   │ │
+│  │  Full App        │   │               │   │  WMS            │ │
+│  │                  │   │  MQTT · OPCUA │   │                 │ │
+│  │  · IIoT Telemetry│◄─►│  · REST · WSS │◄─►│  · Receiving    │ │
+│  │  · OEE Engine    │   │               │   │  · Inventory    │ │
+│  │  · ML Analytics  │   │  Normalizes & │   │  · Cycle Count  │ │
+│  │  · Alarm Mgmt    │   │  routes data  │   │  · Order Fulfill│ │
+│  │  · HMI Panels    │   │  between all  │   │  · AGV Putaway  │ │
+│  │  · Batch Release │   │  systems      │   │  · Shipping     │ │
+│  │                  │   │               │   │                 │ │
+│  │  28 models       │   │  34 models    │   │  38 models      │ │
+│  │  26 screens      │   │  14 screens   │   │  33 screens     │ │
+│  │  39 flows        │   │  22 flows     │   │  33 flows       │ │
+│  └─────────────────┘    └─────┬───────┘     └─────────────────┘ │
 │                               │                                 │
 └───────────────────────────────┼─────────────────────────────────┘
                                 │
                    ┌────────────▼────────────┐
-                   │   Enterprise UNS         │
-                   │   MQTT · WSS · REST      │
-                   │   ERP · SCADA · Robots   │
+                   │   Enterprise UNS        │
+                   │   MQTT · WSS · REST     │
+                   │   ERP · SCADA · Robots  │
                    └─────────────────────────┘
 ```
 
@@ -248,8 +248,8 @@ Robot MQTT   ──MQTT──┘                    │
 ### Import into FUUZ
 
 1. Request a [free trial of FUUZ](https://fuuz.app)
-2. Navigate to **Application Lifecycle Management**
-3. Upload each `.fuuz` package:
+2. Navigate to **Fuuz Packages**
+3. Upload each `.fuuz` package: (each package to a separate Fuuz App/Tenant)
    - `ProveIT Enterprise C - Full App@0.0.1.fuuz`
    - `ProveIT Enterprise B WMS@0.0.1.fuuz`
    - `ProveIT Data Broker App@0.0.1.fuuz`
@@ -276,8 +276,7 @@ ls -lh
 
 | Resource | Link | Description |
 |----------|------|-------------|
-| **Free Trial** | [fuuz.app](https://fuuz.app) | Request your free trial of FUUZ |
+| **Free Trial** | [fuuz.app](https://forms.zohopublic.com/mfgxonlinesaas/form/TrialNotificationForm/formperma/syUyoccvUH7Ef5DaReDpfM48vuKiZtaGfYN18JPPu9k) | Request your free trial of FUUZ |
 | **Get Started** | [getstarted.fuuz.com](https://getstarted.fuuz.com) | Introductory videos and walkthroughs |
 | **FUUZ Academy** | [academy.fuuz.com](https://academy.fuuz.com) | Online LMS with structured courses and certifications |
 | **Support & Community** | [support.fuuz.com](https://support.fuuz.com) | Knowledge base, documentation, and customer community |
-| **FUUZ Skills for Claude** | [github.com/Fuuz-Industrial-Intelligence/fuuz-skills](https://github.com/Fuuz-Industrial-Intelligence/fuuz-skills) | Claude Code skills for building FUUZ applications |
