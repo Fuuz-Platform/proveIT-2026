@@ -1,6 +1,6 @@
 # ProveIT
 
-A suite of fully-functional Industrial Intelligence applications built on the [FUUZ](https://fuuz.app) platform — demonstrating how a single platform can unify IIoT telemetry, MES, WMS, OEE, predictive analytics, and enterprise data brokering across 7 global manufacturing sites.
+A suite of fully-functional Industrial Operations applications built on the [FUUZ](https://fuuz.app) platform — demonstrating how a single platform can unify IIoT telemetry, MES, WMS, OEE, predictive analytics, and enterprise data brokering across 7 global manufacturing sites.
 
 ProveIT was built in **2–3 weeks part-time** to showcase the speed and breadth of what's possible on FUUZ.
 
